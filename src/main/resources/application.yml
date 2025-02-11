@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: workshop
+  datasource:
+    url: ${BD_URL}
+    username: ${BD_USER}
+    password: ${BD_PASS}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+server:
+  servlet:
+    context-path:  /api/v1/workshop
+  port: 9091
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+
+# Configuración JWT
+jwt:
+  secret: 8f9acc1f6efd84bdbbb16cfaf4bb3232338080caf1e6b12839dff5ede2cf32a4
+  expiration: 900000      # 15 minutos para access token
+  refreshExpiration: 86400000  # 24 horas para refresh token
