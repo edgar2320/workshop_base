@@ -18,4 +18,10 @@ public class ConstantApplication {
     public static final String USER_NOT_FOUND = "User not found";
     public static final String USER_NOT_LIST = "No users registered";
     public static final String USER_EMAIL_EXIST = "Email already exists";
+
+    //CONSTANTS FOR  CLIENTS
+    public static final String USER_PHONE_EXIST = "Phone already exists";
+    public static final String CLIENT_NOT_FOUND = "Client not found";
+    public static final String CLIENT_NOT_LIST = "No clients registered";
+    public static final String CLIENT_EMAIL_EXIST = "Email already exists";
 }
