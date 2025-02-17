@@ -3,6 +3,9 @@ package com.demo.security.persistence.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -20,4 +23,6 @@ public class ClientEntity {
     private String email;
     @Column(name = "telefono", nullable = false, length = 20)
     private String phone;
+    @OneToMany(mappedBy = "client", fetch = FetchType.LAZY)
+    private Set<VehicleEntity> vehicles = new HashSet<>();
 }
