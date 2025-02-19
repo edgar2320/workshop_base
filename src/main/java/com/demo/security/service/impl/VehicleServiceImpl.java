@@ -22,6 +22,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @RequiredArgsConstructor
 @Transactional
+/*AGREGAR EL TIPO DE VEHICULO*/
 public class VehicleServiceImpl implements VehicleService {
     private final VehicleRepository vehicleRepository;
     private final ClientRepository clientRepository;
