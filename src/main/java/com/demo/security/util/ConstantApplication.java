@@ -31,4 +31,13 @@ public class ConstantApplication {
     public static final String VEHICLE_PLATE_EXIST = "Plate already exists";
     public static final String CLIENT_NOT_EXIST = "Client not exist";
     public static final String CLIENT_EXIST = "Client already exist";
+
+    //CONSTANTS FOR  CATEGORIES
+    public static final String CATEGORY_NOT_FOUND = "Category not found";
+    public static final String CATEGORY_NAME_EXIST = "Category name already exists";
+
+    //CONSTANTS FOR  SERVICES
+    public static final String SERVICE_NAME_EXIST = "Service name already exists";
+    public static final String SERVICE_NOT_FOUND = "Service not found";
+
 }
