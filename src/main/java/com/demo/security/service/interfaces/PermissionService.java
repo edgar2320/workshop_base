@@ -12,5 +12,4 @@ public interface PermissionService {
     PermissionDTO updatePermission(Long id, PermissionCreateDTO dto);
     void deletePermission(Long id);
     long count();
-
 }

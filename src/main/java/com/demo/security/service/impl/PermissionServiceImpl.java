@@ -44,7 +44,9 @@ public class PermissionServiceImpl implements PermissionService {
         }
         return listPermission.stream()
                 .map(this::mapPermissionDTO)
-                .toList();
+                .toList()
+                ;
+
     }
 
     @Override
